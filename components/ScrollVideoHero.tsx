@@ -140,12 +140,9 @@ const ScrollVideoHero = () => {
             >
               <div className="px-8">
                 <h1 className="text-6xl md:text-8xl font-normal text-[#F6F1E9] tracking-wider mb-4">
-                  TAILORED SPIRITS
+                  TAILORED SPIRITS CO
                 </h1>
-                <p className="text-xl md:text-2xl text-[#F6F1E9]/90 tracking-wide font-normal">
-                  Tailored Spirits Co.
-                </p>
-                <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-wide font-light mt-2">
+                <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-wide font-light">
                   We create extraordinary
                 </p>
               </div>
@@ -160,7 +157,7 @@ const ScrollVideoHero = () => {
             >
               <div className="px-8">
                 <h2 className="text-5xl md:text-7xl font-normal text-[#F6F1E9] tracking-wider">
-                  EXCELLENCE
+                  YOUR CASK
                 </h2>
               </div>
             </div>
@@ -174,7 +171,7 @@ const ScrollVideoHero = () => {
             >
               <div className="px-8">
                 <h2 className="text-5xl md:text-7xl font-normal text-[#F6F1E9] tracking-wider">
-                  HERITAGE
+                  YOUR SPIRIT
                 </h2>
               </div>
             </div>
@@ -188,10 +185,10 @@ const ScrollVideoHero = () => {
             >
               <div className="px-8">
                 <h2 className="text-4xl md:text-6xl font-normal text-[#F6F1E9] tracking-wider mb-8">
-                  DISCOVER YOUR SIGNATURE
+                  YOUR CREATION
                 </h2>
                 <button className="px-12 py-4 border border-[#F6F1E9] text-[#F6F1E9] tracking-widest text-sm hover:bg-[#F6F1E9] hover:text-black transition-colors duration-300 pointer-events-auto">
-                  EXPLORE COLLECTION
+                  DESIGN YOUR BOTTLING
                 </button>
               </div>
             </div>
