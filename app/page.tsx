@@ -1,8 +1,10 @@
 import ScrollVideoHero from '@/components/ScrollVideoHero';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-black">
+      <Navbar />
       <ScrollVideoHero />
 
       <section className="bg-[#215151] text-[#F6F1E9] py-32 px-8">
