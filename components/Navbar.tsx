@@ -7,8 +7,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Change navbar background after scrolling past the entire hero animation (400vh)
-      setIsScrolled(window.scrollY > window.innerHeight * 4);
+      // Change navbar background when YOUR CREATION title appears (85% through hero = 340vh)
+      setIsScrolled(window.scrollY > window.innerHeight * 3.4);
     };
 
     window.addEventListener('scroll', handleScroll);
