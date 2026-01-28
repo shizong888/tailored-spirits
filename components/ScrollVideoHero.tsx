@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
-const TOTAL_FRAMES = 192;
+const TOTAL_FRAMES = 240;
 const FRAME_PREFIX = '/tailored-hero/ezgif-frame-';
 
 const ScrollVideoHero = () => {
@@ -127,6 +127,8 @@ const ScrollVideoHero = () => {
           }}
         />
 
+        <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+
         {imagesLoaded && (
           <>
             <div
@@ -157,12 +159,9 @@ const ScrollVideoHero = () => {
               }}
             >
               <div className="px-8">
-                <h2 className="text-5xl md:text-7xl font-normal text-[#F6F1E9] tracking-wider mb-4">
+                <h2 className="text-5xl md:text-7xl font-normal text-[#F6F1E9] tracking-wider">
                   EXCELLENCE
                 </h2>
-                <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-wide font-light">
-                  Your cask.
-                </p>
               </div>
             </div>
 
@@ -174,12 +173,9 @@ const ScrollVideoHero = () => {
               }}
             >
               <div className="px-8">
-                <h2 className="text-5xl md:text-7xl font-normal text-[#F6F1E9] tracking-wider mb-4">
+                <h2 className="text-5xl md:text-7xl font-normal text-[#F6F1E9] tracking-wider">
                   HERITAGE
                 </h2>
-                <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-wide font-light">
-                  Your spirit.
-                </p>
               </div>
             </div>
 
@@ -191,12 +187,9 @@ const ScrollVideoHero = () => {
               }}
             >
               <div className="px-8">
-                <h2 className="text-4xl md:text-6xl font-normal text-[#F6F1E9] tracking-wider mb-6">
+                <h2 className="text-4xl md:text-6xl font-normal text-[#F6F1E9] tracking-wider mb-8">
                   DISCOVER YOUR SIGNATURE
                 </h2>
-                <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-wide font-light mb-8">
-                  Your Creation. Design your bottling
-                </p>
                 <button className="px-12 py-4 border border-[#F6F1E9] text-[#F6F1E9] tracking-widest text-sm hover:bg-[#F6F1E9] hover:text-black transition-colors duration-300 pointer-events-auto">
                   EXPLORE COLLECTION
                 </button>
