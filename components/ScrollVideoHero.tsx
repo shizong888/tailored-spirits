@@ -138,13 +138,15 @@ const ScrollVideoHero = () => {
                 transform: 'translateY(0px)',
               }}
             >
-              <div className="px-8">
-                <h1 className="text-6xl md:text-8xl font-normal text-[#F6F1E9] tracking-wider mb-6">
-                  TAILORED SPIRITS CO
-                </h1>
-                <p className="text-2xl md:text-4xl text-[#F6F1E9] tracking-wide font-normal">
+              <div className="px-8 max-w-6xl">
+                <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-widest font-normal mb-4">
                   WE CREATE EXTRAORDINARY
                 </p>
+                <h1 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-tight">
+                  TAILORED
+                  <br />
+                  SPIRITS CO
+                </h1>
               </div>
             </div>
 
@@ -155,9 +157,11 @@ const ScrollVideoHero = () => {
                 transform: `translateY(${getTextTransform(0.3, 0.55)}px)`,
               }}
             >
-              <div className="px-8">
-                <h2 className="text-5xl md:text-7xl font-normal text-[#F6F1E9] tracking-wider">
-                  YOUR CASK
+              <div className="px-8 max-w-6xl">
+                <h2 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-tight">
+                  YOUR
+                  <br />
+                  CASK
                 </h2>
               </div>
             </div>
@@ -169,9 +173,11 @@ const ScrollVideoHero = () => {
                 transform: `translateY(${getTextTransform(0.6, 0.85)}px)`,
               }}
             >
-              <div className="px-8">
-                <h2 className="text-5xl md:text-7xl font-normal text-[#F6F1E9] tracking-wider">
-                  YOUR SPIRIT
+              <div className="px-8 max-w-6xl">
+                <h2 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-tight">
+                  YOUR
+                  <br />
+                  SPIRIT
                 </h2>
               </div>
             </div>
@@ -183,9 +189,11 @@ const ScrollVideoHero = () => {
                 transform: `translateY(${scrollProgress < 0.85 ? 50 : Math.max(0, 50 - ((scrollProgress - 0.85) / 0.1) * 50)}px)`,
               }}
             >
-              <div className="px-8">
-                <h2 className="text-4xl md:text-6xl font-normal text-[#F6F1E9] tracking-wider mb-8">
-                  YOUR CREATION
+              <div className="px-8 max-w-6xl">
+                <h2 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-tight mb-8">
+                  YOUR
+                  <br />
+                  CREATION
                 </h2>
                 <button className="px-12 py-4 border border-[#F6F1E9] text-[#F6F1E9] tracking-widest text-sm hover:bg-[#F6F1E9] hover:text-black transition-colors duration-300 pointer-events-auto">
                   DESIGN YOUR BOTTLING
