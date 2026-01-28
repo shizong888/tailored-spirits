@@ -7,8 +7,8 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Change navbar background after scrolling past the hero (roughly 100vh)
-      setIsScrolled(window.scrollY > window.innerHeight);
+      // Change navbar background after scrolling past the entire hero animation (400vh)
+      setIsScrolled(window.scrollY > window.innerHeight * 4);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -21,8 +21,8 @@ const Navbar = () => {
         isScrolled ? 'bg-black' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
-        <a href="/" className="text-[#F6F1E9] w-32 md:w-40">
+      <div className="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
+        <a href="/" className="text-[#F6F1E9] w-24 md:w-28 flex-shrink-0">
           <svg width="100%" height="100%" viewBox="0 0 120 48" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2416_197)">
               <path d="M24.2997 4.68396L25.8996 0H4.60599L3.00611 4.68396H10.9659C7.76614 13.8851 4.68741 23.1286 1.57127 32.3298H6.90568C9.90079 23.1286 13.0191 13.8851 16.2607 4.68396H24.3019H24.2997Z" fill="currentColor"></path>
@@ -40,6 +40,30 @@ const Navbar = () => {
             </defs>
           </svg>
         </a>
+
+        <div className="hidden md:flex items-center gap-8 flex-1 justify-center">
+          <a href="#about" className="text-[#F6F1E9] hover:text-[#F6F1E9]/80 transition-colors tracking-wide text-sm">
+            ABOUT
+          </a>
+          <a href="#collection" className="text-[#F6F1E9] hover:text-[#F6F1E9]/80 transition-colors tracking-wide text-sm">
+            COLLECTION
+          </a>
+          <a href="#process" className="text-[#F6F1E9] hover:text-[#F6F1E9]/80 transition-colors tracking-wide text-sm">
+            OUR PROCESS
+          </a>
+          <a href="#contact" className="text-[#F6F1E9] hover:text-[#F6F1E9]/80 transition-colors tracking-wide text-sm">
+            CONTACT
+          </a>
+        </div>
+
+        <div className="flex items-center gap-4">
+          <a
+            href="#design"
+            className="hidden md:block px-6 py-2 bg-[#F6F1E9] text-black tracking-widest text-xs hover:bg-[#F6F1E9]/90 transition-colors rounded-full"
+          >
+            DESIGN YOUR BOTTLING
+          </a>
+        </div>
       </div>
     </nav>
   );
