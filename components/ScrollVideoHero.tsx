@@ -129,6 +129,8 @@ const ScrollVideoHero = () => {
 
         <div className="absolute inset-0 bg-black/30 pointer-events-none" />
 
+        <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black to-transparent pointer-events-none" />
+
         {imagesLoaded && (
           <>
             <div
