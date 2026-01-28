@@ -143,7 +143,7 @@ const ScrollVideoHero = () => {
                   TAILORED SPIRITS CO
                 </h1>
                 <p className="text-2xl md:text-4xl text-[#F6F1E9] tracking-wide font-normal">
-                  We create extraordinary
+                  WE CREATE EXTRAORDINARY
                 </p>
               </div>
             </div>
