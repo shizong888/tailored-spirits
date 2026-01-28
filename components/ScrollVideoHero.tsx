@@ -112,7 +112,7 @@ const ScrollVideoHero = () => {
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         {!imagesLoaded && (
           <div className="absolute inset-0 flex items-center justify-center bg-black">
-            <div className="text-amber-100 text-xl tracking-widest">
+            <div className="text-[#F6F1E9] text-xl tracking-widest">
               LOADING...
             </div>
           </div>
@@ -137,11 +137,14 @@ const ScrollVideoHero = () => {
               }}
             >
               <div className="px-8">
-                <h1 className="text-6xl md:text-8xl font-light text-amber-100 tracking-wider mb-4">
+                <h1 className="text-6xl md:text-8xl font-normal text-[#F6F1E9] tracking-wider mb-4">
                   TAILORED SPIRITS
                 </h1>
-                <p className="text-xl md:text-2xl text-amber-200/80 tracking-widest font-light">
-                  CRAFTED FOR THE DISCERNING
+                <p className="text-xl md:text-2xl text-[#F6F1E9]/90 tracking-wide font-normal">
+                  Tailored Spirits Co.
+                </p>
+                <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-wide font-light mt-2">
+                  We create extraordinary
                 </p>
               </div>
             </div>
@@ -154,11 +157,11 @@ const ScrollVideoHero = () => {
               }}
             >
               <div className="px-8">
-                <h2 className="text-5xl md:text-7xl font-light text-amber-100 tracking-wider mb-4">
+                <h2 className="text-5xl md:text-7xl font-normal text-[#F6F1E9] tracking-wider mb-4">
                   EXCELLENCE
                 </h2>
-                <p className="text-lg md:text-xl text-amber-200/80 tracking-widest font-light">
-                  IN EVERY DROP
+                <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-wide font-light">
+                  Your cask.
                 </p>
               </div>
             </div>
@@ -171,11 +174,11 @@ const ScrollVideoHero = () => {
               }}
             >
               <div className="px-8">
-                <h2 className="text-5xl md:text-7xl font-light text-amber-100 tracking-wider mb-4">
+                <h2 className="text-5xl md:text-7xl font-normal text-[#F6F1E9] tracking-wider mb-4">
                   HERITAGE
                 </h2>
-                <p className="text-lg md:text-xl text-amber-200/80 tracking-widest font-light">
-                  TRADITION REFINED
+                <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-wide font-light">
+                  Your spirit.
                 </p>
               </div>
             </div>
@@ -188,10 +191,13 @@ const ScrollVideoHero = () => {
               }}
             >
               <div className="px-8">
-                <h2 className="text-4xl md:text-6xl font-light text-amber-100 tracking-wider mb-6">
+                <h2 className="text-4xl md:text-6xl font-normal text-[#F6F1E9] tracking-wider mb-6">
                   DISCOVER YOUR SIGNATURE
                 </h2>
-                <button className="px-12 py-4 border border-amber-100 text-amber-100 tracking-widest text-sm hover:bg-amber-100 hover:text-black transition-colors duration-300 pointer-events-auto">
+                <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-wide font-light mb-8">
+                  Your Creation. Design your bottling
+                </p>
+                <button className="px-12 py-4 border border-[#F6F1E9] text-[#F6F1E9] tracking-widest text-sm hover:bg-[#F6F1E9] hover:text-black transition-colors duration-300 pointer-events-auto">
                   EXPLORE COLLECTION
                 </button>
               </div>
