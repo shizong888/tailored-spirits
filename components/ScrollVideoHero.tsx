@@ -179,8 +179,8 @@ const ScrollVideoHero = () => {
             <div
               className="absolute inset-0 flex items-center justify-center text-center pointer-events-none"
               style={{
-                opacity: getTextOpacity(0.85, 1),
-                transform: `translateY(${getTextTransform(0.85, 1)}px)`,
+                opacity: scrollProgress < 0.85 ? 0 : Math.min(1, (scrollProgress - 0.85) / 0.1),
+                transform: `translateY(${scrollProgress < 0.85 ? 50 : Math.max(0, 50 - ((scrollProgress - 0.85) / 0.1) * 50)}px)`,
               }}
             >
               <div className="px-8">
