@@ -195,7 +195,7 @@ const ScrollVideoHero = () => {
                   <br />
                   CREATION
                 </h2>
-                <button className="px-12 py-4 border border-[#F6F1E9] text-[#F6F1E9] tracking-widest text-sm hover:bg-[#F6F1E9] hover:text-black transition-colors duration-300 pointer-events-auto rounded-full">
+                <button className="px-12 py-4 bg-[#F6F1E9] text-black tracking-widest text-sm hover:bg-[#F6F1E9]/90 transition-colors duration-300 pointer-events-auto rounded-full">
                   DESIGN YOUR BOTTLING
                 </button>
               </div>

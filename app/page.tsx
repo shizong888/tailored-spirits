@@ -39,7 +39,7 @@ export default function Home() {
             A carefully curated selection of the world&apos;s finest whisky,
             chosen for the connoisseur who demands nothing less than perfection.
           </p>
-          <button className="px-12 py-4 border border-[#F6F1E9] text-[#F6F1E9] tracking-widest text-sm hover:bg-[#F6F1E9] hover:text-black transition-colors duration-300 rounded-full">
+          <button className="px-12 py-4 bg-[#F6F1E9] text-black tracking-widest text-sm hover:bg-[#F6F1E9]/90 transition-colors duration-300 rounded-full">
             VIEW COLLECTION
           </button>
         </div>
