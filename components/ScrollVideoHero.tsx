@@ -142,7 +142,7 @@ const ScrollVideoHero = () => {
                 <p className="text-lg md:text-xl text-[#F6F1E9]/80 tracking-widest font-normal mb-4">
                   WE CREATE EXTRAORDINARY
                 </p>
-                <h1 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-tight">
+                <h1 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-none">
                   TAILORED
                   <br />
                   SPIRITS CO
@@ -158,7 +158,7 @@ const ScrollVideoHero = () => {
               }}
             >
               <div className="px-8 max-w-6xl">
-                <h2 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-tight">
+                <h2 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-none">
                   YOUR
                   <br />
                   CASK
@@ -174,7 +174,7 @@ const ScrollVideoHero = () => {
               }}
             >
               <div className="px-8 max-w-6xl">
-                <h2 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-tight">
+                <h2 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-none">
                   YOUR
                   <br />
                   SPIRIT
