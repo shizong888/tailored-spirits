@@ -108,7 +108,7 @@ const ScrollVideoHero = () => {
   };
 
   return (
-    <div ref={containerRef} className="relative h-[400vh] bg-black">
+    <div ref={containerRef} className="relative h-[400vh] bg-black overflow-hidden">
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         {!imagesLoaded && (
           <div className="absolute inset-0 flex items-center justify-center bg-black">
@@ -191,13 +191,13 @@ const ScrollVideoHero = () => {
                 transform: `translateY(${scrollProgress < 0.85 ? 50 : Math.max(0, 50 - ((scrollProgress - 0.85) / 0.1) * 50)}px)`,
               }}
             >
-              <div className="px-8 max-w-6xl">
-                <h2 className="text-7xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-tight mb-8">
+              <div className="px-8 max-w-6xl w-full">
+                <h2 className="text-6xl md:text-9xl font-bold text-[#F6F1E9] tracking-tight leading-tight mb-6">
                   YOUR
                   <br />
                   CREATION
                 </h2>
-                <a href="/bottle-builder" className="px-12 py-4 bg-[#F6F1E9] text-black tracking-widest text-sm hover:bg-[#F6F1E9]/90 transition-colors duration-300 pointer-events-auto rounded-full inline-block">
+                <a href="/bottle-builder" className="px-8 md:px-12 py-3 md:py-4 bg-[#F6F1E9] text-black tracking-widest text-xs md:text-sm hover:bg-[#F6F1E9]/90 transition-colors duration-300 pointer-events-auto rounded-full inline-block">
                   DESIGN YOUR BOTTLING
                 </a>
               </div>

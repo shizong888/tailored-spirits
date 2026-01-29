@@ -136,23 +136,25 @@ const BottleConfigurator = () => {
   }, [selectedBottle.id]);
 
   return (
-    <div className="h-screen bg-black overflow-hidden">
+    <div className="h-screen bg-black overflow-hidden flex flex-col">
       {/* Top info bar */}
-      <div className="fixed top-0 left-0 right-0 z-40 bg-black/80 backdrop-blur-sm border-b border-[#F6F1E9]/10 pt-20">
-        <div className="max-w-7xl mx-auto px-8 py-3 text-center">
-          <p className="text-[#F6F1E9] text-sm tracking-widest">
-            {selectedBottle.name} | {selectedBottle.description} | {selectedBottle.price}
-          </p>
+      <div className="fixed top-0 left-0 right-0 z-40 pt-20 flex-shrink-0">
+        <div className="bg-black/80 backdrop-blur-sm border-b border-[#F6F1E9]/10">
+          <div className="max-w-7xl mx-auto px-8 py-3 text-center">
+            <p className="text-[#F6F1E9] text-sm tracking-widest">
+              {selectedBottle.name} | {selectedBottle.description} | {selectedBottle.price}
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="flex flex-col lg:flex-row h-full pt-[120px]">
+      <div className="flex flex-col lg:flex-row flex-1 pt-[136px] min-h-0">
         {/* Left side - Scene with bottle */}
-        <div className="lg:w-2/3 relative bg-black flex items-center justify-center overflow-hidden h-full">
+        <div className="h-[50vh] lg:h-auto lg:w-2/3 relative bg-black flex items-center justify-center lg:flex-1 flex-shrink-0">
           {/* Background scene */}
           <div className="absolute inset-0">
             <Image
-              src="/bottle-builder/scenes/ts-office.png"
+              src="/bottle-builder/scenes/ts-office.jpeg"
               alt="Tailored Spirits Office"
               fill
               className="object-cover"
@@ -180,7 +182,7 @@ const BottleConfigurator = () => {
                   src={bottle.image}
                   alt={bottle.name}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                   priority={bottle.id === selectedBottle.id}
                 />
               </div>
@@ -190,8 +192,8 @@ const BottleConfigurator = () => {
         </div>
 
         {/* Right side - Configuration panel */}
-        <div className="lg:w-1/3 bg-[#0A0A0A] border-l border-[#F6F1E9]/10 overflow-hidden h-full flex flex-col">
-          <div className="p-6 flex-1 flex flex-col overflow-hidden">
+        <div className="lg:w-1/3 bg-[#0A0A0A] border-l border-[#F6F1E9]/10 overflow-hidden flex-shrink-0 lg:h-auto flex flex-col min-h-0">
+          <div className="p-6 flex-1 flex flex-col overflow-hidden min-h-0">
             {/* Header */}
             <div className="mb-6 flex-shrink-0">
               <p className="text-[#F6F1E9]/60 text-xs tracking-widest mb-2">
