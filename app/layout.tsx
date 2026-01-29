@@ -8,8 +8,27 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tailored Spirits | Curated Whisky for the Discerning",
-  description: "A carefully curated selection of the world's finest whisky, chosen for the connoisseur who demands nothing less than perfection.",
+  title: "Tailored Spirits | Your Cask, Your Spirit, Your Creation",
+  description: "Design your bottling with Tailored Spirits. Your cask, your spirit, your creation - bespoke whisky experiences crafted for you.",
+  openGraph: {
+    title: "Tailored Spirits | Your Cask, Your Spirit, Your Creation",
+    description: "Design your bottling with Tailored Spirits. Your cask, your spirit, your creation - bespoke whisky experiences crafted for you.",
+    images: [
+      {
+        url: "/tailored-spirits-og.png",
+        width: 1200,
+        height: 630,
+        alt: "Tailored Spirits",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tailored Spirits | Your Cask, Your Spirit, Your Creation",
+    description: "Design your bottling with Tailored Spirits. Your cask, your spirit, your creation - bespoke whisky experiences crafted for you.",
+    images: ["/tailored-spirits-og.png"],
+  },
 };
 
 export default function RootLayout({
