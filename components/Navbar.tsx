@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +15,8 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const closeMenu = () => setIsMenuOpen(false);
 
   return (
     <nav
@@ -58,8 +61,79 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
           <a
-            href="#design"
+            href="/bottle-builder"
             className="hidden md:block px-6 py-2 bg-[#F6F1E9] text-black tracking-widest text-xs hover:bg-[#F6F1E9]/90 transition-colors rounded-full"
+          >
+            DESIGN YOUR BOTTLING
+          </a>
+
+          {/* Hamburger button - Mobile only */}
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden text-[#F6F1E9] p-2 z-50 relative"
+            aria-label="Toggle menu"
+          >
+            <div className="w-6 h-5 flex flex-col justify-between">
+              <span
+                className={`w-full h-0.5 bg-[#F6F1E9] transition-all duration-300 ${
+                  isMenuOpen ? 'rotate-45 translate-y-2' : ''
+                }`}
+              />
+              <span
+                className={`w-full h-0.5 bg-[#F6F1E9] transition-all duration-300 ${
+                  isMenuOpen ? 'opacity-0' : ''
+                }`}
+              />
+              <span
+                className={`w-full h-0.5 bg-[#F6F1E9] transition-all duration-300 ${
+                  isMenuOpen ? '-rotate-45 -translate-y-2' : ''
+                }`}
+              />
+            </div>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile menu */}
+      <div
+        className={`md:hidden fixed inset-0 bg-black/95 backdrop-blur-sm transition-all duration-300 ${
+          isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}
+        style={{ top: '72px' }}
+      >
+        <div className="flex flex-col items-center justify-center h-full gap-8 px-8">
+          <a
+            href="#about"
+            onClick={closeMenu}
+            className="text-[#F6F1E9] hover:text-[#F6F1E9]/80 transition-colors tracking-widest text-lg"
+          >
+            ABOUT
+          </a>
+          <a
+            href="#collection"
+            onClick={closeMenu}
+            className="text-[#F6F1E9] hover:text-[#F6F1E9]/80 transition-colors tracking-widest text-lg"
+          >
+            COLLECTION
+          </a>
+          <a
+            href="#process"
+            onClick={closeMenu}
+            className="text-[#F6F1E9] hover:text-[#F6F1E9]/80 transition-colors tracking-widest text-lg"
+          >
+            OUR PROCESS
+          </a>
+          <a
+            href="#contact"
+            onClick={closeMenu}
+            className="text-[#F6F1E9] hover:text-[#F6F1E9]/80 transition-colors tracking-widest text-lg"
+          >
+            CONTACT
+          </a>
+          <a
+            href="/bottle-builder"
+            onClick={closeMenu}
+            className="mt-8 px-8 py-3 bg-[#F6F1E9] text-black tracking-widest text-sm hover:bg-[#F6F1E9]/90 transition-colors rounded-full"
           >
             DESIGN YOUR BOTTLING
           </a>
