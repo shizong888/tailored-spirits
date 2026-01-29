@@ -108,8 +108,8 @@ const ScrollVideoHero = () => {
   };
 
   return (
-    <div ref={containerRef} className="relative h-[400vh] bg-black overflow-hidden">
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
+    <div ref={containerRef} className="relative h-[400vh] bg-black">
+      <div className="sticky top-0 h-[100dvh] w-full overflow-hidden bg-black">
         {!imagesLoaded && (
           <div className="absolute inset-0 flex items-center justify-center bg-black">
             <div className="text-[#F6F1E9] text-xl tracking-widest">
@@ -120,10 +120,12 @@ const ScrollVideoHero = () => {
 
         <canvas
           ref={canvasRef}
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover bg-black"
           style={{
             opacity: imagesLoaded ? 1 : 0,
-            transition: 'opacity 0.5s ease-in-out'
+            transition: 'opacity 0.5s ease-in-out',
+            minHeight: '100%',
+            minWidth: '100%'
           }}
         />
 
