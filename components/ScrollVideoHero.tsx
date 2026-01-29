@@ -108,7 +108,7 @@ const ScrollVideoHero = () => {
   };
 
   return (
-    <div ref={containerRef} className="relative h-[400vh] bg-black overflow-hidden">
+    <div ref={containerRef} className="relative h-screen md:h-[400vh] bg-black overflow-hidden">
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         {!imagesLoaded && (
           <div className="absolute inset-0 flex items-center justify-center bg-black">
