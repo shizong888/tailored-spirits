@@ -10,6 +10,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Tailored Spirits | Your Cask, Your Spirit, Your Creation",
   description: "Design your bottling with Tailored Spirits. Your cask, your spirit, your creation - bespoke whisky experiences crafted for you.",
+  metadataBase: new URL('https://tailored-spirits.vercel.app'),
   openGraph: {
     title: "Tailored Spirits | Your Cask, Your Spirit, Your Creation",
     description: "Design your bottling with Tailored Spirits. Your cask, your spirit, your creation - bespoke whisky experiences crafted for you.",
