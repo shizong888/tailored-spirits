@@ -182,7 +182,7 @@ const BottleConfigurator = () => {
                   src={bottle.image}
                   alt={bottle.name}
                   fill
-                  className="object-contain"
+                  className="object-cover"
                   priority={bottle.id === selectedBottle.id}
                 />
               </div>
