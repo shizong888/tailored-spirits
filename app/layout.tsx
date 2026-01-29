@@ -8,11 +8,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Tailored Spirits | Your Cask, Your Spirit, Your Creation",
+  title: "Tailored Spirits | We create extraordinary",
   description: "Design your bottling with Tailored Spirits. Your cask, your spirit, your creation - bespoke whisky experiences crafted for you.",
   metadataBase: new URL('https://tailored-spirits.vercel.app'),
   openGraph: {
-    title: "Tailored Spirits | Your Cask, Your Spirit, Your Creation",
+    title: "Tailored Spirits | We create extraordinary",
     description: "Design your bottling with Tailored Spirits. Your cask, your spirit, your creation - bespoke whisky experiences crafted for you.",
     images: [
       {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tailored Spirits | Your Cask, Your Spirit, Your Creation",
+    title: "Tailored Spirits | We create extraordinary",
     description: "Design your bottling with Tailored Spirits. Your cask, your spirit, your creation - bespoke whisky experiences crafted for you.",
     images: ["/tailored-spirits-og.png"],
   },
