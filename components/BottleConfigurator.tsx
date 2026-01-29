@@ -198,7 +198,7 @@ const BottleConfigurator = () => {
                 TAILORED SPIRITS
               </p>
               <h2 className="text-xl font-bold text-[#F6F1E9] tracking-tight">
-                Choose your bottle style
+                Choose your bottle option
               </h2>
             </div>
 
@@ -314,7 +314,7 @@ const BottleConfigurator = () => {
                 onClick={() => setShowModal(true)}
                 className="w-full px-6 py-3 bg-[#F6F1E9] text-black tracking-widest text-xs font-medium hover:bg-[#F6F1E9]/90 transition-colors duration-300 rounded-full"
               >
-                CONTINUE TO CUSTOMIZATION
+                CONTINUE TO CUSTOMISATION
               </button>
             </div>
           </div>
