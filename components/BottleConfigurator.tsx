@@ -203,7 +203,7 @@ const BottleConfigurator = () => {
             </div>
 
             {/* Bottle options - Desktop */}
-            <div className="hidden lg:flex lg:flex-col lg:space-y-3 lg:flex-1 lg:overflow-y-auto lg:pr-2">
+            <div className="hidden lg:flex lg:flex-col lg:space-y-3 lg:flex-1 lg:overflow-y-auto lg:pr-2 scrollbar-hide">
               {bottles.map((bottle, index) => (
                 <button
                   key={bottle.id}
